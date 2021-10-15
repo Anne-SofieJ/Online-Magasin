@@ -1,0 +1,37 @@
+/* Projekt: Online Magasin - Anytime Treats - Lavet af Anne-Sofie Jespersen */
+
+/* Google fonts (NB: load før :root) */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;700;800;900&display=swap');
+</style>
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #b3aba9;
+  --lightbrown: #d8c4ab;
+  --pink: #e5b1c4;
+  --green: #90a05a;
+  --yellow: #fda51e;
+  --red: #640a20;
+  --lightyellow: #ebc266;
+}
+
+/* fonte */
+  font-family {
+:'Overpass', cursive; /* brødtekst */
+    }
+
+/* Baggrundsfarve */
+body {
+  background-color: var(--grey);
+}
+
+/* Typografi */
+h1 {
+font-family: Overpass;
+}
+
+/* NEXT THING */
