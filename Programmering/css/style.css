@@ -1,0 +1,176 @@
+/* Projekt: Online Magasin - Anytime Treats - Lavet af Anne-Sofie Jespersen */
+
+/* Google fonts (NB: load før :root) */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;700;800;900&display=swap');
+</style>
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #b3aba9;
+  --lightbrown: #d8c4ab;
+  --pink: #e5b1c4;
+  --green: #90a05a;
+  --yellow: #fda51e;
+  --red: #640a20;
+  --lightyellow: #ebc266;
+}
+
+/* fonte */
+  font-family {
+:'Overpass', cursive; /* brødtekst */
+    }
+
+/* Baggrundsfarve */
+body {
+  background-color: #b3aba9;
+}
+/* Typografi med font*/
+h1 {
+font-family: Overpass;
+text-align: left;
+padding-left: 50px;
+}
+h2 {
+  font-family: Overpass;
+  text-align: left;
+  padding-left: 50px;
+}
+h3 {
+  font-family: Overpass;
+}
+h4 {
+  font-family: Overpass;
+}
+p {
+  font-family: Overpass;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* Logo */
+#logo {
+  width: 150px;
+  float: left;
+  padding-left: 5%;
+  padding-top: 0%;
+}
+
+/* Farve til menupunkt */
+.hvidskrift {
+  color: white;
+}
+
+
+/* Tekst på forsidebilledet */
+#tekstforside {
+  font-size: 24px;
+}
+
+/* Style til billede af citrontærte på forsiden */
+#forsidebillede {
+  width: 100%;
+}
+
+/* Style til menu med dropdown */
+nav p {
+  font-family: Overpass;
+  color: var(--black);
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
+}
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  font-family: Overpass;
+  color: var(--black);
+  font-size: 14px;
+  padding: 22px 14px;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 10px 0px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+}
+
+nav ul li ul li a {
+  padding: 8px 14px;
+}
+nav ul li ul li a:hover{
+  background-color:#d8c4ab;
+}
+
+/* Billeder ved seneste opskrifter */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  padding-radius: 0px 0px 50px 0px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Knapper til nyhedsbrev */
+.knap{
+  position: relative;
+  left: 50px;
+  top:2px:
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* Billede ved nyhedsbrev */
+.nyhedsbrev2 {
+width: 300px;
+position: relative;
+left: 1%
+padding-bottom: 8px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+/* Footer - ikoner */
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
