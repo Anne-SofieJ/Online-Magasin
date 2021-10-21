@@ -3,102 +3,135 @@
 
 <head>
 	<meta charset="utf-8">
-
 	<title>Online Magasin • Anytime Treats</title>
-	<meta name="Anne-Sofie" content="Anytime Treats">
-	<meta name="description" content="Example description">
+	<meta name="author" content="Anne-Sofie Jespersen">
+	<meta name="description" content="Denne side lærer dig af bage kager uden advanceret udstyr og dyre ingredienser">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="bage, bagning, kager, guide, udstyr, ingredienser">
 
-	<!-- link rel="stylesheet" href="css/reset.css" -->
+<!-- link rel="stylesheet" href="css/reset.css" -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- favicon = ikon i faneblad / browser -->
+<!-- favicon = ikon i faneblad / browser -->
 	<link rel="icon" type="image/x-icon" href="images/logo/logo.png" />
 </head>
 
+<!-- Logo med link-->
 <body>
+	<a id="logo" href="index.html">
+	<img src="images/logo/logo.png" alt="Logo til Anytime Treats" style="width:100px;height:100px;">
+	</a>
 
-	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
-	<div id="wrap">
+<!-- Menu med dropdown starter-->
+<nav>
+<ul>
+		<li><a href="#">Inspiration</a>
+	<ul>
+		<li><a href="lagkage.html">Til højtider</a></li>
+		<li><a href="hindborsnitte.html">Til begivenheder</a></li>
+		<li><a href="bananbrod.html">Til madpakken</a></li>
+		<li><a href="citrontorte.html">Til mange</a></li>
+	</ul>
+		</li>
+		<li><a class=hvidskrift href="#">Opskrifter</a>
+		<ul>
+			<li><a href="#">Flødekager</a></li>
+			<li><a href="bananbrod.html">Skærekager</a></li>
+			<li><a href="#">Småkager</a></li>
+			<li><a href="lagkage.html">Lagkager</a></li>
+			<li><a href="hindborsnitte.html">Tørkager</a></li>
+			<li><a href="citrontorte.html">Tærter</a></li>
+		</ul>
+		<li><a href="#">Tips & Tricks</a>
+		<ul>
+			<li><a href="#">Begrænset køkkenudstyr – Gør sådan her</a></li>
+			<li><a href="#">Stop madspild – Brug dine brødrester</a></li>
+			<li><a href="#">Lav dine egne ingredienser – nemt og billigt</a></li>
+			<li><a href="#">Pynt til søde sager</a></li>
+		</ul>
+		</li>
+		<li><a href="#">Kager på tid</a>
+		<ul>
+			<li><a href="#">Under 2 timer</a></li>
+			<li><a href="#">Under 5 timer</a></li>
+			<li><a href="#">Over 5 timer</a></li>
+			<li><a href="#">No bake cake – En hurtig kage</a></li>
+		</ul>
+		</li>
+</ul>
+</nav>
 
-		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
-		<nav>
-			<!-- Menuer laves som regel i form af uordnede lister.
-					 Listerne kan styles så de går vandret eller lodret -->
-			<ul>
-				<li><a href="#"> Menu I </a></li>
-				<li><a href="#"> Menu II </a></li>
-				<li><a href="#"> Menu 1II </a></li>
-			</ul>
+<!-- Navn og logo -->
+	<img id="forsidebillede" src="images/citrontærte/forsidebilledeC.png" alt="Citrontærte">
 
-		</nav>
 
-		<header>
-			<!-- site navn plus evt tagline og logo -->
-			<img src="images/citrontærte/forsidebilledeC.jpg" alt="Citrontærte">
+<!-- Seneste opskrifter -->
+<main>
+	<section class="opskrifter">
+		<article>
+			<h2>Seneste opskrifter</h2>
+				<div class="row">
+				<div class="column">
+					<a href="lagkage.html">
+					<img src="images/lagkage/hovedbilledeL.png" alt="Billede af Halloween Lagkage" style="width: 100%; height: auto;"></a>
+					<h4 class=hvidskrift >Halloween Lagkage</h4>
+				</div>
+				<div class="column">
+					<a href="hindborsnitte.html">
+					<img src="images/hindbærsnitter/hovedbilledeH.png" alt="Billede af hindbærsnitter" style="width: 100%; height: auto;"></a>
+					<h4>Hindbærsnitter</h4>
+				</div>
+				<div class="column">
+					<a href="bananbrod.html">
+					<img src="images/bananbrod/hovedbilledeB.png" alt="Billede af bananbrød" style="width: 100%; height: auto;"></a>
+					<h4>Bananbrød</h4>
+				</div>
+				</div>
+		</article>
+	</section>
+</main>
 
-			<!-- ofte reserveres h1 til site-navn -->
-			<h1> Websidens Navn </h1>
-		</header>
+<!-- Nyhedsbrev -->
+<h2>Nyhedsbrev</h2>
+<h4>Tilmeld dig vores nyhedsbrev, så du hver gang der kommer et nyt magasin, modtager først besked!</h4>
+		<form action="/action_page.php">
+		  <div class="container0">
+		    <hr>
 
-		<!-- indhold -->
-		<div id="content">
-			<aside>
-				<!-- sidebar -->
-				<h4> h4 Sidebar </h4>
-				<ul>
-					<li><a href="#"> Menu I </a></li>
-					<li><a href="#"> Menu II </a></li>
-					<li><a href="#"> Menu 1II </a></li>
-				</ul>
-			</aside>
+		    <label for="psw"><b>Fornavn</b></label>
+		    <input type="text" placeholder="Skriv dit fornavn her" name="psw" required>
 
-			<!-- modul for en sektion -->
-			<main>
-				<section id="aaa">
-					<article>
-						<h2> h2 Overskrift</h2>
-						<figure>
-							<img src="images/smiley.png" alt="" style="width: 200px; height: auto;">
-							<figcaption> Billedtekst </figcaption>
-						</figure>
+		    <label for="psw-repeat"><b>Efternavn</b></label>
+		    <input type="text" placeholder="Skriv dit efternavn her" name="psw-repeat" required>
 
-						<h3> h3 Underafsnit Overskrift </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-						</p>
-					</article>
-				</section>
+		   	<label for="email"><b>Email</b></label>
+		    <input type="text" placeholder="Skriv din e-mailadresse her" name="email" required>
 
-				<!-- modul: en ny sektion -->
-				<section id="bbb">
-					<article>
-						<h2> h2 Overskrift </h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-						</p>
+		     <label for="psw-repeat"><b>Telefonnummer</b></label>
+		    <input type="text" placeholder="Skriv dit telefonnummer her" name="psw-repeat" required>
 
-						<h3> h3 Overskrift </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-						</p>
+		    <h4 id="nyhedsbrevtekst">Ved at tilmelde dig vores nyhedsbrev acceptere du vores <a href="#" style="color:#ebc266">regler & vilkår</a></h4>
 
-						<h3> h3 Overskrift </h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-						</p>
-
-					</article>
-				</section>
-			</main>
-		</div>
+		    <div class="clearfix">
+		      <button type="submit" class="signupbtn">TILMELD</button>
+		    </div>
+		  </div>
+		</form>
 
 <!-- Footer -->
-		<footer>
-			&copy; Footer informationer her ..., 2021
-		</footer>
-
-	</div>
+<nav>
+	<footer>
+		<img class="footer" src="images/footer/footer.png" alt="Footerbillede af chokolade">
+			<div class="container">
+				<a href="https://www.facebook.com/"><img class="icon" src="images/logo/ikonfacebook.png" alt="Link til Facebook"></a>
+			</div>
+			<div class="container2">
+				<a href="https://www.instagram.com/"><img class="icon2" src="images/logo/ikoninstagram.png" alt="Link til Instagram"></a>
+			</div>
+			<div class="container3">
+				<a href="https://www.pinterest.dk/"><img class="icon3" src="images/logo/ikonpinterest.png" alt="Link til Pinterest"></a>
+			</div>
+	</footer>
+</nav>
 </body>
-
 </html>
