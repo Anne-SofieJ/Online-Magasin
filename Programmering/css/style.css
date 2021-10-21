@@ -113,7 +113,7 @@ nav ul li a {
   display: block;
   font-family: Overpass;
   color: var(--black);
-  font-size: 14px;
+  font-size: 20px;
   padding: 22px 14px;
   text-decoration: none;
 }
@@ -200,7 +200,7 @@ button:hover {
 
 /* Float signup button and add an equal width */
 .signupbtn {
-  float: left;
+  float: right;
   width: 50%;
   font-family: Overpass;
 }
@@ -208,6 +208,11 @@ button:hover {
 /* Add padding to container elements */
 .container0 {
   padding: 40px;
+  width: 100%;
+}
+
+#nyhedsbrevtekst {
+  float: left;
 }
 
 /* Clear floats */
